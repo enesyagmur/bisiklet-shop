@@ -1,7 +1,14 @@
 import React from "react";
+import { useSelector } from "react-redux";
+import "../style/components-style/category.css";
 
 const Category = () => {
-  return <div>Category</div>;
+  const { componentState } = useSelector((state) => state.components);
+  return (
+    <div id="category" className={componentState[2] ? "open" : "close"}>
+      kategoriler
+    </div>
+  );
 };
 
 export default Category;

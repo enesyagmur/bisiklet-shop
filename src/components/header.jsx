@@ -22,6 +22,9 @@ const Header = () => {
   const sepetShow = () => {
     dispatch(changeSepetStatus());
   };
+  const categoryShow = () => {
+    dispatch(changeCategoryStatus());
+  };
 
   return (
     <div className="header">
@@ -30,21 +33,20 @@ const Header = () => {
       </div>
       <div className="header-category">
         <div>
-          <BsBicycle className="icon" />
-          <p>Bisikletler</p>
-        </div>
-        <div>
-          <BsBicycle className="icon" />
-          <p>Bisikletler</p>
-        </div>
-        <div>
-          <BsBicycle className="icon" />
-          <p>Bisikletler</p>
-        </div>
-
-        <div>
-          <AiOutlineMenu className="icon" />
+          <AiOutlineMenu className="icon" onClick={categoryShow} />
           <p>Hepsi</p>
+        </div>
+        <div>
+          <BsBicycle className="icon" />
+          <p>Bisikletler</p>
+        </div>
+        <div>
+          <BsBicycle className="icon" />
+          <p>Bisikletler</p>
+        </div>
+        <div>
+          <BsBicycle className="icon" />
+          <p>Bisikletler</p>
         </div>
       </div>
       <div className="header-search">

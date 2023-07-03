@@ -11,9 +11,9 @@
   color: white;
 }
 
-.open {
+.sepetOpen {
   right: 0;
 }
-.close {
+.sepetClose {
   right: -400px;
 }

@@ -11,9 +11,9 @@
   color: white;
 }
 
-.open {
+.profileOpen {
   right: 0;
 }
-.close {
+.profileClose {
   right: -400px;
 }

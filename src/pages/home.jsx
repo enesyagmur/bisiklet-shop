@@ -3,6 +3,7 @@ import "../style/home.css";
 import Header from "../components/header";
 import Login from "../components/Login";
 import Sepet from "../components/Sepet";
+import Category from "../components/Category";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Header />
       <Login />
       <Sepet />
+      <Category />
     </div>
   );
 };
