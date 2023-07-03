@@ -3,14 +3,14 @@ import { createSlice } from "@reduxjs/toolkit";
 export const slice = createSlice({
   name: "components",
   initialState: {
-    componentState: [{ profile: false }, { sepet: false }, { category: false }],
+    componentState: [false, false, false],
   },
   reducers: {
-    changeComponentState: (state, action) => {
-      state[action.payload].profile = !state[action.payload].profile;
+    changeProfileStatus: (state) => {
+      state.componentState[0] = !state.componentState[0];
     },
   },
 });
 
-export const { changeComponentState } = slice.actions;
+export const { changeProfileStatus } = slice.actions;
 export default slice.reducer;

@@ -4,8 +4,12 @@ import { useSelector } from "react-redux/es/hooks/useSelector";
 
 const Login = () => {
   const { componentState } = useSelector((state) => state.components);
-  console.log(componentState[0].profile);
-  return <div id="login" className="close"></div>;
+
+  return (
+    <div id="login" className={componentState[0] ? "open" : "close"}>
+      Login
+    </div>
+  );
 };
 
 export default Login;

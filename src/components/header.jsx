@@ -5,8 +5,17 @@ import { BsSearch } from "react-icons/bs";
 import { MdOutlineAccountCircle } from "react-icons/md";
 import { AiOutlineHeart } from "react-icons/ai";
 import { SlBasket } from "react-icons/sl";
+import { useDispatch, useSelector } from "react-redux";
+import { changeProfileStatus } from "../redux/slice";
 
-const header = () => {
+const Header = () => {
+  const dispatch = useDispatch();
+  const { componenetsState } = useSelector((state) => state.components);
+
+  const profileShow = () => {
+    dispatch(changeProfileStatus());
+  };
+
   return (
     <div className="header">
       <div className="header-logo">
@@ -36,7 +45,7 @@ const header = () => {
         <BsSearch className="icon" />
       </div>
       <div className="header-account">
-        <MdOutlineAccountCircle className="icon" />
+        <MdOutlineAccountCircle className="icon" onClick={profileShow} />
         <AiOutlineHeart className="icon" />
         <SlBasket className="icon" />
       </div>
@@ -44,4 +53,4 @@ const header = () => {
   );
 };
 
-export default header;
+export default Header;
