@@ -1,4 +1,4 @@
-import "../style/header.css";
+import "../style/components-style/header.css";
 import { BsBicycle } from "react-icons/bs";
 import { AiOutlineMenu } from "react-icons/ai";
 import { BsSearch } from "react-icons/bs";
@@ -6,10 +6,10 @@ import { MdOutlineAccountCircle } from "react-icons/md";
 import { AiOutlineHeart } from "react-icons/ai";
 import { SlBasket } from "react-icons/sl";
 
-const Header = () => {
+const header = () => {
   return (
     <div className="header">
-      <div className="header-logo" onClick={openOrclose}>
+      <div className="header-logo">
         <h1>BIKE24</h1>
       </div>
       <div className="header-category">
@@ -36,7 +36,7 @@ const Header = () => {
         <BsSearch className="icon" />
       </div>
       <div className="header-account">
-        <MdOutlineAccountCircle className="icon" onClick={openOrclose} />
+        <MdOutlineAccountCircle className="icon" />
         <AiOutlineHeart className="icon" />
         <SlBasket className="icon" />
       </div>
@@ -44,4 +44,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default header;
