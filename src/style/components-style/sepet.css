@@ -1,0 +1,19 @@
+#sepet {
+  width: 400px;
+  height: 100vh;
+  position: fixed;
+  top: 100px;
+  transition: all 1s;
+  background-color: var(--yanRenk);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.open {
+  right: 0;
+}
+.close {
+  right: -400px;
+}

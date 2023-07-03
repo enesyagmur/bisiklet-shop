@@ -6,14 +6,21 @@ import { MdOutlineAccountCircle } from "react-icons/md";
 import { AiOutlineHeart } from "react-icons/ai";
 import { SlBasket } from "react-icons/sl";
 import { useDispatch, useSelector } from "react-redux";
-import { changeProfileStatus } from "../redux/slice";
+import {
+  changeProfileStatus,
+  changeSepetStatus,
+  changeCategoryStatus,
+} from "../redux/slice";
 
 const Header = () => {
+  const { componentState } = useSelector((state) => state.components);
   const dispatch = useDispatch();
-  const { componenetsState } = useSelector((state) => state.components);
 
   const profileShow = () => {
     dispatch(changeProfileStatus());
+  };
+  const sepetShow = () => {
+    dispatch(changeSepetStatus());
   };
 
   return (
@@ -47,7 +54,7 @@ const Header = () => {
       <div className="header-account">
         <MdOutlineAccountCircle className="icon" onClick={profileShow} />
         <AiOutlineHeart className="icon" />
-        <SlBasket className="icon" />
+        <SlBasket className="icon" onClick={sepetShow} />
       </div>
     </div>
   );

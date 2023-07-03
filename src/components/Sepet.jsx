@@ -1,7 +1,14 @@
 import React from "react";
+import "../style/components-style/sepet.css";
+import { useSelector } from "react-redux";
 
 const Sepet = () => {
-  return <div>Sepet</div>;
+  const { componentState } = useSelector((state) => state.components);
+  return (
+    <div id="sepet" className={componentState[1] ? "open" : "close"}>
+      Sepet
+    </div>
+  );
 };
 
 export default Sepet;
