@@ -1,4 +1,3 @@
-import React from "react";
 import "../style/header.css";
 import { BsBicycle } from "react-icons/bs";
 import { AiOutlineMenu } from "react-icons/ai";
@@ -10,12 +9,9 @@ import { SlBasket } from "react-icons/sl";
 const Header = () => {
   return (
     <div className="header">
-      <div className="profile"></div>
-
-      <div className="header-logo">
+      <div className="header-logo" onClick={openOrclose}>
         <h1>BIKE24</h1>
       </div>
-
       <div className="header-category">
         <div>
           <BsBicycle className="icon" />
@@ -35,14 +31,12 @@ const Header = () => {
           <p>Hepsi</p>
         </div>
       </div>
-
       <div className="header-search">
         <input type="text" placeholder="ürün ara" />
         <BsSearch className="icon" />
       </div>
-
       <div className="header-account">
-        <MdOutlineAccountCircle className="icon" />
+        <MdOutlineAccountCircle className="icon" onClick={openOrclose} />
         <AiOutlineHeart className="icon" />
         <SlBasket className="icon" />
       </div>

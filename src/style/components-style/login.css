@@ -1,0 +1,15 @@
+#UserAccount {
+  width: 400px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  transition: all 1s;
+  background-color: var(--yanRenk);
+}
+
+.open {
+  right: 0;
+}
+.close {
+  right: -400px;
+}
