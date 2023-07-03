@@ -1,0 +1,7 @@
+.home {
+  width: 100%;
+  min-height: 929px;
+  background-color: var(--bodyBg);
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,11 @@
+:root {
+  --bodyBg: white;
+  --fontColor: #063757;
+  --yanRenk: #ff6600;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
