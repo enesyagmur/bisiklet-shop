@@ -4,6 +4,7 @@ export const slice = createSlice({
   name: "components",
   initialState: {
     componentState: [false, false, false],
+    // 0. index profili - 1.index sepeti - 2.index categorileri temsil ediyor
   },
   reducers: {
     changeProfileStatus: (state) => {
