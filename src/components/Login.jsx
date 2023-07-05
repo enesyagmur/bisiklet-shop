@@ -10,7 +10,7 @@ const Login = () => {
       id="login"
       className={componentState[0] ? "profileOpen" : "profileClose"}
     >
-      <p className="loginHeader">Login</p>
+      <p className="loginTitle">Login</p>
       <div className="loginInput">
         <p>Hesabınıza giriş yapın</p>
         <input type="text" placeholder="mail adresi giriniz" />
