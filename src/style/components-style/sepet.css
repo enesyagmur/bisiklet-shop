@@ -1,5 +1,5 @@
 #sepet {
-  width: 400px;
+  width: 600px;
   height: 100vh;
   position: fixed;
   top: 100px;
@@ -15,5 +15,5 @@
   right: 0;
 }
 .sepetClose {
-  right: -400px;
+  right: -600px;
 }

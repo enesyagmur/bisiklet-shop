@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
   color: var(--fontColor);
   padding-bottom: 200px;
   border-left: 2px solid gray;
@@ -21,34 +20,37 @@
   right: -600px;
 }
 
-.loginHeader {
-  background-color: var(--fontColor);
+.loginTitle {
+  background-color: var(--fontColor2);
   text-align: center;
   color: white;
-  padding: 10px;
+  height: 6%;
   width: 100%;
-  position: relative;
-  top: -81px;
   font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .loginInput {
   width: 80%;
-  height: 30%;
+  height: 40%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+
   justify-content: space-evenly;
 }
 .loginInput input {
   width: 100%;
   border: 1px solid gray;
-  padding: 5px;
+  height: 15%;
+  padding: 5%;
 }
 .loginInput button {
   width: 100%;
-  padding: 5px;
+  height: 15%;
   background-color: var(--yanRenk);
   color: white;
+  border: none;
 }
 .loginInput p {
   font-size: 2rem;
@@ -56,10 +58,10 @@
 
 .register {
   width: 80%;
-  height: 20%;
+  height: 30%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+
   justify-content: space-evenly;
 }
 .register p {
@@ -70,7 +72,7 @@
   background-color: gray;
   color: var(--fontColor);
   width: 100%;
-
-  padding: 5px;
+  height: 20%;
   text-align: center;
+  border: none;
 }
