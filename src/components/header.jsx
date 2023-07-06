@@ -1,5 +1,9 @@
 import "../style/components-style/header.css";
 import { BsBicycle } from "react-icons/bs";
+import { GiGloves } from "react-icons/gi";
+import { TbHelmet } from "react-icons/tb";
+import { GiAutoRepair } from "react-icons/gi";
+import { PiBatteryChargingVerticalLight } from "react-icons/pi";
 import { AiOutlineMenu } from "react-icons/ai";
 import { BsSearch } from "react-icons/bs";
 import { MdOutlineAccountCircle } from "react-icons/md";
@@ -34,19 +38,27 @@ const Header = () => {
       <div className="header-category">
         <div>
           <AiOutlineMenu className="icon" onClick={categoryShow} />
-          <p>Hepsi</p>
+          <p>HEPSİ</p>
         </div>
         <div>
           <BsBicycle className="icon" />
-          <p>Bisikletler</p>
+          <p>PARÇALAR</p>
         </div>
         <div>
-          <BsBicycle className="icon" />
-          <p>Bisikletler</p>
+          <GiGloves className="icon" />
+          <p>GİYİM</p>
         </div>
         <div>
-          <BsBicycle className="icon" />
-          <p>Bisikletler</p>
+          <TbHelmet className="icon" />
+          <p>KORUMA</p>
+        </div>
+        <div>
+          <GiAutoRepair className="icon" />
+          <p>TAMİR</p>
+        </div>
+        <div>
+          <PiBatteryChargingVerticalLight className="icon" />
+          <p>AKSESUARLAR</p>
         </div>
       </div>
       <div className="header-search">
