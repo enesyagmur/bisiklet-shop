@@ -74,6 +74,7 @@
   color: white;
   border: none;
   margin: 5px;
+  cursor: pointer;
 }
 .continueBtn {
   width: 100%;
@@ -86,4 +87,5 @@
   font-weight: bold;
   color: white;
   border: none;
+  cursor: pointer;
 }

@@ -1,9 +1,14 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import "../style/components-style/login.css";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const { componentState } = useSelector((state) => state.components);
+  const navigate = useNavigate();
+  const goRegister = () => {
+    navigate("/register");
+  };
 
   return (
     <div
@@ -17,7 +22,7 @@ const Login = () => {
         <input type="pasword" placeholder="şifre" />
         <button>Giriş</button>
       </div>
-      <div className="register">
+      <div className="register" onClick={goRegister}>
         <p>Hesabınız yok mu?</p>
         <button>Hızlı kayıt</button>
       </div>

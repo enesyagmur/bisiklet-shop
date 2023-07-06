@@ -1,0 +1,97 @@
+.register {
+  width: 100%;
+  min-height: 929px;
+  background-color: var(--bodyBg);
+  display: flex;
+  flex-direction: column;
+}
+.registerInput {
+  width: 100%;
+  min-height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+.registerInput p {
+  font-size: 20px;
+}
+.registerInput input {
+  width: 40%;
+  height: 70px;
+  padding: 5px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: 1px solid lightgrey;
+  cursor: text;
+}
+.registerInputHeader {
+  width: 70%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.userData {
+  width: 70%;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.userDataInput {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.userMailInput {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.userPasswordInput {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.personelData {
+  width: 70%;
+  min-height: 750px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.personelDataGender {
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+.personelDataGender span {
+  width: 10%;
+  height: 50px;
+  display: flex;
+}
+.personelDataGender span input {
+  width: 10%;
+  height: 30%;
+}
+.personelDataName {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+
+.personelDataAdress {
+  width: 100%;
+  height: 300px;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.registerBtn {
+  width: 30%;
+  height: 70px;
+  background-color: var(--yanRenk);
+  margin-top: 100px;
+}

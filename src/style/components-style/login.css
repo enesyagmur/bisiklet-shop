@@ -51,6 +51,7 @@
   background-color: var(--yanRenk);
   color: white;
   border: none;
+  cursor: pointer;
 }
 .loginInput p {
   font-size: 2rem;
@@ -61,7 +62,6 @@
   height: 30%;
   display: flex;
   flex-direction: column;
-
   justify-content: space-evenly;
 }
 .register p {
@@ -75,4 +75,5 @@
   height: 20%;
   text-align: center;
   border: none;
+  cursor: pointer;
 }
