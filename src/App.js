@@ -19,3 +19,5 @@ function App() {
 }
 
 export default App;
+//register sayfası
+//üstte görünen categorilerin düzeltilmesi
