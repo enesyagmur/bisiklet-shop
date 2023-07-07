@@ -20,20 +20,28 @@
   margin-top: 50px;
   position: relative;
 }
-.homeSlider img {
+.homeSliderLeft {
+  width: 60%;
+  height: 100%;
+}
+.homeSliderLeft img {
   width: 100%;
   height: 100%;
   background-size: cover;
 }
-.sliderLeftBtn {
-  padding: 10px;
-  position: absolute;
+.homeSliderLeft .sliderLeftBtn {
   left: 0;
-  top: 50%;
 }
-.sliderRightBtn {
-  padding: 10px;
-  position: absolute;
-  right: 0;
+.homeSliderLeft .sliderRightBtn {
+  right: 40%;
+}
+.homeSliderLeft button {
   top: 50%;
+  width: 3%;
+  height: 9%;
+  position: absolute;
+  background-color: var(--fontColor2);
+  color: var(--bodyBg);
+  border: none;
+  cursor: pointer;
 }

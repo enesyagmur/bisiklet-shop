@@ -8,6 +8,8 @@ import Footer from "../components/Footer";
 import { closeAllWindows } from "../redux/slice";
 import { useDispatch } from "react-redux";
 import sliders from "../data/sliders.json";
+import { AiOutlineLeft } from "react-icons/ai";
+import { AiOutlineRight } from "react-icons/ai";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -45,20 +47,22 @@ const Home = () => {
       <Category />
       <div className="homeMain" onClick={closeWindows}>
         <div className="homeSlider">
-          <button
-            className="sliderLeftBtn"
-            onClick={() => changeSlider("left")}
-          >
-            left
-          </button>
-          <button
-            className="sliderRightBtn"
-            onClick={() => changeSlider("right")}
-          >
-            right
-          </button>
+          <div className="homeSliderLeft">
+            <button
+              className="sliderLeftBtn"
+              onClick={() => changeSlider("left")}
+            >
+              <AiOutlineLeft />
+            </button>
+            <button
+              className="sliderRightBtn"
+              onClick={() => changeSlider("right")}
+            >
+              <AiOutlineRight />
+            </button>
 
-          <img src={slider.image} alt="" />
+            <img src={slider.image} alt="" />
+          </div>
         </div>
 
         <div className="homeDiscount"></div>
