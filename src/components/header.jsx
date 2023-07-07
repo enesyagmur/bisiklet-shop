@@ -14,6 +14,7 @@ import {
   changeProfileStatus,
   changeSepetStatus,
   changeCategoryStatus,
+  closeAllWindows,
 } from "../redux/slice";
 import { useNavigate } from "react-router-dom";
 
