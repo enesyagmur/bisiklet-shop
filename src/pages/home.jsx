@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../style/home.css";
 import Header from "../components/header";
 import Login from "../components/Login";
@@ -14,21 +14,29 @@ const Home = () => {
   const closeWindows = () => {
     dispatch(closeAllWindows());
   };
-
-  let sliderCount = 0;
+  const [sliderCount, setSliderCount] = useState(0);
+  const [slider, setSlider] = useState(sliders[sliderCount]);
 
   const changeSlider = (side) => {
     if (side === "right") {
-      sliderCount++;
-      setSlider(sliders[sliderCount]);
+      if (sliderCount < 2) {
+        setSliderCount(sliderCount + 1);
+      } else {
+        setSliderCount(sliderCount - 2);
+      }
     } else if (side === "left") {
-      sliderCount--;
-      setSlider(sliders[sliderCount]);
+      if (sliderCount > 0) {
+        setSliderCount(sliderCount - 1);
+      } else {
+        setSliderCount(sliderCount + 2);
+      }
     }
   };
 
-  const [slider, setSlider] = useState(sliders[sliderCount]);
-  console.log(slider);
+  useEffect(() => {
+    setSlider(sliders[sliderCount]);
+  }, [sliderCount]);
+
   return (
     <div className="home">
       <Header />
