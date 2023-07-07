@@ -15,6 +15,7 @@ import {
   changeSepetStatus,
   changeCategoryStatus,
 } from "../redux/slice";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const { componentState } = useSelector((state) => state.components);
@@ -30,45 +31,54 @@ const Header = () => {
     dispatch(changeCategoryStatus());
   };
 
+  const navigate = useNavigate();
+
+  const goHome = () => {
+    navigate("/");
+  };
+
   return (
     <div className="header">
-      <div className="header-logo">
-        <h1>BIKE24</h1>
-      </div>
-      <div className="header-category">
-        <div>
-          <AiOutlineMenu className="icon" onClick={categoryShow} />
-          <p>HEPSİ</p>
+      <div className="headerTop"></div>
+      <div className="headerBottom">
+        <div className="header-logo" onClick={goHome}>
+          <h1>BIKE24</h1>
         </div>
-        <div>
-          <BsBicycle className="icon" />
-          <p>PARÇALAR</p>
+        <div className="header-category">
+          <div>
+            <AiOutlineMenu className="icon" onClick={categoryShow} />
+            <p>HEPSİ</p>
+          </div>
+          <div>
+            <BsBicycle className="icon" />
+            <p>PARÇALAR</p>
+          </div>
+          <div>
+            <GiGloves className="icon" />
+            <p>GİYİM</p>
+          </div>
+          <div>
+            <TbHelmet className="icon" />
+            <p>KORUMA</p>
+          </div>
+          <div>
+            <GiAutoRepair className="icon" />
+            <p>TAMİR</p>
+          </div>
+          <div>
+            <PiBatteryChargingVerticalLight className="icon" />
+            <p>AKSESUARLAR</p>
+          </div>
         </div>
-        <div>
-          <GiGloves className="icon" />
-          <p>GİYİM</p>
+        <div className="header-search">
+          <input type="text" placeholder="ürün ara" />
+          <BsSearch className="icon" />
         </div>
-        <div>
-          <TbHelmet className="icon" />
-          <p>KORUMA</p>
+        <div className="header-account">
+          <MdOutlineAccountCircle className="icon" onClick={profileShow} />
+          <AiOutlineHeart className="icon" />
+          <SlBasket className="icon" onClick={sepetShow} />
         </div>
-        <div>
-          <GiAutoRepair className="icon" />
-          <p>TAMİR</p>
-        </div>
-        <div>
-          <PiBatteryChargingVerticalLight className="icon" />
-          <p>AKSESUARLAR</p>
-        </div>
-      </div>
-      <div className="header-search">
-        <input type="text" placeholder="ürün ara" />
-        <BsSearch className="icon" />
-      </div>
-      <div className="header-account">
-        <MdOutlineAccountCircle className="icon" onClick={profileShow} />
-        <AiOutlineHeart className="icon" />
-        <SlBasket className="icon" onClick={sepetShow} />
       </div>
     </div>
   );

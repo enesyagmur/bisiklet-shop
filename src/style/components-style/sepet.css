@@ -2,7 +2,7 @@
   width: 600px;
   height: 100vh;
   position: fixed;
-  top: 100px;
+  top: 150px;
   transition: all 1s;
   background-color: var(--bodyBg);
   display: flex;
@@ -27,6 +27,7 @@
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+  color: var(--bodyBg);
 }
 .sepetList {
   width: 80%;

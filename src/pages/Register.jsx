@@ -6,6 +6,7 @@ import Sepet from "../components/Sepet";
 import Category from "../components/Category";
 import { closeAllWindows } from "../redux/slice";
 import { useDispatch } from "react-redux";
+import Footer from "../components/Footer";
 
 const Register = () => {
   const dispatch = useDispatch();
@@ -74,6 +75,7 @@ const Register = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
