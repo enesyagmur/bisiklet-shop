@@ -24,9 +24,18 @@ export const slice = createSlice({
       state.componentState[0] = false;
       state.componentState[2] = !state.componentState[2];
     },
+    closeAllWindows: (state) => {
+      state.componentState[0] = false;
+      state.componentState[1] = false;
+      state.componentState[2] = false;
+    },
   },
 });
 
-export const { changeProfileStatus, changeSepetStatus, changeCategoryStatus } =
-  slice.actions;
+export const {
+  changeProfileStatus,
+  changeSepetStatus,
+  changeCategoryStatus,
+  closeAllWindows,
+} = slice.actions;
 export default slice.reducer;

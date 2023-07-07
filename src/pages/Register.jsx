@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../style/register.css";
 import Header from "../components/header";
 import Login from "../components/Login";
 import Sepet from "../components/Sepet";
 import Category from "../components/Category";
+import { closeAllWindows } from "../redux/slice";
+import { useDispatch } from "react-redux";
 
 const Register = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(closeAllWindows());
+  }, []);
+  // açılışta açık olan pencereleri kapatma
+
   return (
     <div className="register">
       <Header />
