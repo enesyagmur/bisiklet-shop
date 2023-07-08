@@ -21,5 +21,4 @@ function App() {
 }
 
 export default App;
-//register sayfası
-//üstte görünen categorilerin düzeltilmesi
+//slider ın sağına 3 adet div

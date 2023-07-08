@@ -63,6 +63,11 @@ const Home = () => {
 
             <img src={slider.image} alt="" />
           </div>
+          <div className="homeSliderRight">
+            <div className="sliderRightTop"></div>
+            <div className="sliderRightCenter"></div>
+            <div className="sliderRightBottom"></div>
+          </div>
         </div>
 
         <div className="homeDiscount"></div>
