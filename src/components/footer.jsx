@@ -3,13 +3,18 @@ import "../style/components-style/footer.css";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { CiFacebook } from "react-icons/ci";
+import brands from "../data/brands.json";
 
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footerBrands">
         <p className="brandsTitle">Markalar</p>
-        <div className="brandsList"></div>
+        <div className="brandsList">
+          {brands.map((item) => (
+            <img src={item.image} alt="" />
+          ))}
+        </div>
       </div>
       <div className="footerMain">
         <div className="footerHelp">

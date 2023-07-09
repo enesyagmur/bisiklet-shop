@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  min-height: 450px;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
   border-top: 1px solid gray;
@@ -10,15 +10,27 @@
 /* -------------- */
 .footerBrands {
   width: 80%;
-  height: 200px;
+  height: 250px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
   background-color: var(--bodyBg);
 }
 .brandsList {
-  width: 100%;
+  width: 80%;
   height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--gray);
+}
+
+.brandsList img {
+  width: 120px;
+  height: 80px;
+  background-size: cover;
+  margin: 5px;
 }
 /* -------------- */
 .footerMain {
