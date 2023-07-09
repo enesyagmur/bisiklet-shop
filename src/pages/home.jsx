@@ -10,8 +10,9 @@ import Footer from "../components/Footer";
 import { closeAllWindows } from "../redux/slice";
 import { useDispatch } from "react-redux";
 import sliders from "../data/sliders.json";
-import products from "../data/products.json";
-import CarouselComp from "../components/CarouselComp";
+import BestSellersComponent from "../components/BestSellersComponent";
+import CarouselComponent from "../components/CarouselComponent";
+import DiscountedProductsComponent from "../components/DiscountedProductsComponent";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -50,7 +51,7 @@ const Home = () => {
       <div className="homeMain" onClick={closeWindows}>
         <div className="homeSlider">
           <div className="homeSliderLeft">
-            <CarouselComp />
+            <CarouselComponent />
           </div>
 
           <div className="homeSliderRight">
@@ -59,17 +60,11 @@ const Home = () => {
             <div className="sliderRightBottom"></div>
           </div>
         </div>
-
-        <div className="homeBestProducts">
-          <div className="bestProductList">
-            {products.map((item) => (
-              <div className="product">
-                <p className="productName">{item.name}</p>
-                <img src={item.image} alt="" className="productImage" />
-                <p className="productPrice">{item.price}$</p>
-              </div>
-            ))}
-          </div>
+        <div className="bestSellerProducts">
+          <BestSellersComponent />
+        </div>
+        <div className="discountedProducts">
+          <DiscountedProductsComponent />
         </div>
       </div>
       <Footer />

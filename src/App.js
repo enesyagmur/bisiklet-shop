@@ -22,8 +22,8 @@ function App() {
 
 export default App;
 //home sayfası için yapılacaklar:
-//resim slıder ını düzeltme normal usul ile yapma
-//bir kaç adet ürünün bulunduğu slider tarzı kayan ürünler
-//pencerelerin resimlerin altında açılma sorunu
+//++++resim slıder ını düzeltme normal usul ile yapma
+//++++bir kaç adet ürünün bulunduğu slider tarzı kayan ürünler
 // üstteki mantığın aynısı bir bölüm daha sadece indirimli ürünlerin olduğu
 // footer ın düzenlenmesi
+//pencerelerin resimlerin altında açılma sorunu
