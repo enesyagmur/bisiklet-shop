@@ -21,4 +21,9 @@ function App() {
 }
 
 export default App;
-//slider ın sağına 3 adet div
+//home sayfası için yapılacaklar:
+//resim slıder ını düzeltme normal usul ile yapma
+//bir kaç adet ürünün bulunduğu slider tarzı kayan ürünler
+//pencerelerin resimlerin altında açılma sorunu
+// üstteki mantığın aynısı bir bölüm daha sadece indirimli ürünlerin olduğu
+// footer ın düzenlenmesi

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../style/home.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import Header from "../components/header";
 import Login from "../components/Login";
 import Sepet from "../components/Sepet";
@@ -8,8 +10,8 @@ import Footer from "../components/Footer";
 import { closeAllWindows } from "../redux/slice";
 import { useDispatch } from "react-redux";
 import sliders from "../data/sliders.json";
-import { AiOutlineLeft } from "react-icons/ai";
-import { AiOutlineRight } from "react-icons/ai";
+import products from "../data/products.json";
+import CarouselComp from "../components/CarouselComp";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -48,21 +50,9 @@ const Home = () => {
       <div className="homeMain" onClick={closeWindows}>
         <div className="homeSlider">
           <div className="homeSliderLeft">
-            <button
-              className="sliderLeftBtn"
-              onClick={() => changeSlider("left")}
-            >
-              <AiOutlineLeft />
-            </button>
-            <button
-              className="sliderRightBtn"
-              onClick={() => changeSlider("right")}
-            >
-              <AiOutlineRight />
-            </button>
-
-            <img src={slider.image} alt="" />
+            <CarouselComp />
           </div>
+
           <div className="homeSliderRight">
             <div className="sliderRightTop"></div>
             <div className="sliderRightCenter"></div>
@@ -70,7 +60,17 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="homeDiscount"></div>
+        <div className="homeBestProducts">
+          <div className="bestProductList">
+            {products.map((item) => (
+              <div className="product">
+                <p className="productName">{item.name}</p>
+                <img src={item.image} alt="" className="productImage" />
+                <p className="productPrice">{item.price}$</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
       <Footer />
     </div>
