@@ -1,59 +1,38 @@
 import React from "react";
-import Carousel from "react-bootstrap/Carousel";
 import "../style/home.css";
 import products from "../data/products.json";
 
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
 const DiscountedProductsComponent = () => {
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
   return (
-    <Carousel>
-      <Carousel.Item>
-        <div className="bestProductList">
-          <div className="product">
-            <p className="productName">{products[0].name}</p>
-            <img src={products[0].image} alt="" className="productImage" />
-            <p className="productPrice">{products[0].price}$</p>
-          </div>
-          <div className="product">
-            <p className="productName">{products[1].name}</p>
-            <img src={products[1].image} alt="" className="productImage" />
-            <p className="productPrice">{products[1].price}$</p>
-          </div>
-          <div className="product">
-            <p className="productName">{products[2].name}</p>
-            <img src={products[2].image} alt="" className="productImage" />
-            <p className="productPrice">{products[2].price}$</p>
-          </div>
-          <div className="product">
-            <p className="productName">{products[3].name}</p>
-            <img src={products[3].image} alt="" className="productImage" />
-            <p className="productPrice">{products[3].price}$</p>
-          </div>
+    <Carousel responsive={responsive}>
+      {products.map((item) => (
+        <div className="discountProduct">
+          <p className="productName">{item.name}</p>
+          <img src={item.image} alt="" className="productImage" />
+          <p className="productPrice">{item.price}$</p>
         </div>
-      </Carousel.Item>
-      <Carousel.Item>
-        <div className="bestProductList ">
-          <div className="product">
-            <p className="productName">{products[0].name}</p>
-            <img src={products[0].image} alt="" className="productImage" />
-            <p className="productPrice">{products[0].price}$</p>
-          </div>
-          <div className="product">
-            <p className="productName">{products[1].name}</p>
-            <img src={products[1].image} alt="" className="productImage" />
-            <p className="productPrice">{products[1].price}$</p>
-          </div>
-          <div className="product">
-            <p className="productName">{products[2].name}</p>
-            <img src={products[2].image} alt="" className="productImage" />
-            <p className="productPrice">{products[2].price}$</p>
-          </div>
-          <div className="product">
-            <p className="productName">{products[3].name}</p>
-            <img src={products[3].image} alt="" className="productImage" />
-            <p className="productPrice">{products[3].price}$</p>
-          </div>
-        </div>
-      </Carousel.Item>
+      ))}
     </Carousel>
   );
 };

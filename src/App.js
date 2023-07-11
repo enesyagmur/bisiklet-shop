@@ -25,5 +25,5 @@ export default App;
 //++++resim slıder ını düzeltme normal usul ile yapma
 //++++bir kaç adet ürünün bulunduğu slider tarzı kayan ürünler
 //++++üstteki mantığın aynısı bir bölüm daha sadece indirimli ürünlerin olduğu
-// footer ın düzenlenmesi
+//devam ediyor--- footer ın düzenlenmesi
 //pencerelerin resimlerin altında açılma sorunu
