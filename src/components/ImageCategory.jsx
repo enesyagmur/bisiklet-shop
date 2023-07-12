@@ -6,17 +6,14 @@ const ImageCategory = () => {
     <div className="imageCategory">
       <div>
         <p>Kasklar</p>
-        <button>+</button>
       </div>
       <div>
         {" "}
         <p>Kasklar</p>
-        <button>+</button>
       </div>
       <div>
         {" "}
         <p>Kasklar</p>
-        <button>+</button>
       </div>
     </div>
   );
