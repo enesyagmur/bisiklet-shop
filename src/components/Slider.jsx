@@ -30,6 +30,8 @@ const Slider = () => {
   return (
     <div className="homeSliderLeft">
       <img src={sliders[sliderCount].image} alt="" />
+      <p className="sliderName">{sliders[sliderCount].name}</p>
+      <p className="sliderPrice">{sliders[sliderCount].price} TL</p>
       <button
         className="sliderLeftBtn sliderBtn"
         onClick={() => changeSlider("left")}

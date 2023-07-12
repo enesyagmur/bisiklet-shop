@@ -11,7 +11,7 @@ const BestSellersComponent = () => {
           <div className="product" key={item.id}>
             <p className="productName">{item.name}</p>
             <img src={item.image} alt="" className="productImage" />
-            <p className="productPrice">{item.price}</p>
+            <p className="productPrice">{item.price} TL</p>
           </div>
         ))}
       </div>

@@ -1,30 +1,30 @@
 [
   {
     "id": 0,
-    "name": "Su Bardağı Tutucu",
-    "price": 686,
-    "image": "https://m.media-amazon.com/images/I/61WXCKaYaTL._AC_UL400_.jpg",
+    "name": "ORTLIEB Vario PS - QL2.1 Bike Pannier / Backpack 20L - petrol",
+    "price": 155,
+    "image": "https://images.bike24.com/media/720/i/mb/12/fd/32/ortlieb-vario-ps-ql2-1517728.jpg",
     "discount": 0
   },
   {
     "id": 1,
-    "name": "KAPVOE Bisiklet gözlüğü",
+    "name": "Oakley ARO5 Race ICE EU Helmet - I.C.E Black Reflective",
     "price": 363,
-    "image": "https://m.media-amazon.com/images/I/51ehZSD0RJL._AC_UL400_.jpg",
+    "image": "https://images.bike24.com/media/720/i/mb/4a/0b/f2/oakley-aro5-race-ice-eu-helmet-ice-black-reflective-3-1449001.jpg",
     "discount": 15
   },
   {
     "id": 2,
-    "name": "SPYMINNPOO Bisiklet LCD Ekran",
+    "name": "Cannondale SCALPEL HT CARBON 3 - 29 Mountain Bike - 2023 - black",
     "price": 465,
     "image": "https://m.media-amazon.com/images/I/61kOnYg2yEL._AC_UL400_.jpg",
     "discount": 50
   },
   {
     "id": 3,
-    "name": "KAPVOE Bisiklet gözlüğü",
-    "price": 363,
-    "image": "https://m.media-amazon.com/images/I/51ehZSD0RJL._AC_UL400_.jpg",
+    "name": "SRAM GX Eagle Transmission Groupset - AXS | T-Type | D1",
+    "price": 1363,
+    "image": "https://images.bike24.com/media/720/i/mb/a0/b8/85/sram-gx-eagle-transmission-groupset-1-1523231.jpg",
     "discount": 15
   }
 ]

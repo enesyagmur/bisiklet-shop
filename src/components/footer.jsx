@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footerBrands">
-        <p className="brandsTitle">Markalar</p>
+        <p className="brandsTitle">MARKALAR</p>
         <div className="brandsList">
           {brands.map((item) => (
             <img src={item.image} alt="" />

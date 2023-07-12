@@ -1,14 +1,21 @@
 [
   {
     "id": 0,
-    "image": "https://images.unsplash.com/photo-1541625602330-2277a4c46182?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y3ljbGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    "name": "Cannondale TOPSTONE 1 - Shimano GRX - Gravelbike - 2023 - cinnamon",
+    "price": 1105,
+    "image": "https://media.istockphoto.com/id/1352269460/tr/foto%C4%9Fraf/blu-racing-sport-road-bike.jpg?s=612x612&w=0&k=20&c=wXpFafxYvPSydcZ7DUR8gQGeZuZKK1aXfceK52QZ7fE="
   },
   {
     "id": 1,
-    "image": "https://plus.unsplash.com/premium_photo-1683842178579-2365ce4f5352?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGN5Y2xpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+    "name": "BMC TEAMMACHINE ALR TWO - 105 Roadbike - 2022 - metallic silver & black",
+    "price": 1322,
+
+    "image": "https://media.istockphoto.com/id/182783396/tr/foto%C4%9Fraf/blue-bicycle.jpg?s=612x612&w=0&k=20&c=TxOKBgkOtXTQ1HcHyAyhL-Qoz9XEItlQZ1Q5IEbJJW0="
   },
   {
     "id": 2,
-    "image": "https://plus.unsplash.com/premium_photo-1671100502325-8870ff9ba5c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGN5Y2xpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+    "name": "CUBE NUROAD Race FE - Gravel Bike - 2022 - grey/black",
+    "price": 1743,
+    "image": "https://media.istockphoto.com/id/1087904344/tr/foto%C4%9Fraf/beyaz-arka-plan-%C3%BCzerinde-bisiklet.jpg?s=612x612&w=0&k=20&c=nCXduxPwfao1d-zik9PFltsvZ3mchDu86h0JlaFVkdM="
   }
 ]
