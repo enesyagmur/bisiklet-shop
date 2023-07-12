@@ -23,21 +23,18 @@ const Footer = () => {
       </div>
       <div className="footerMain">
         <div className="footerHelp">
-          <p>BIKE24 Hakkında</p>
           <p>Şartlar ve koşullar</p>
           <p>Gizlilik Politikası</p>
           <p>Çerez Ayarları</p>
           <p>Geri bildirim</p>
         </div>
         <div className="footerHelp">
-          <p>Yardum</p>
           <p>Fiyat Garantisi</p>
           <p>İadeler / Talepler</p>
           <p>Nakliye ve montaj</p>
           <p>İptal Hakkı</p>
         </div>
         <div className="footerPayMetods">
-          <p>Ödeme</p>
           <FaCcMastercard className="payMetodIcon" />
           <FaCcVisa className="payMetodIcon" />
           <FaCcPaypal className="payMetodIcon" />

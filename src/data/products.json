@@ -26,12 +26,5 @@
     "price": 363,
     "image": "https://m.media-amazon.com/images/I/51ehZSD0RJL._AC_UL400_.jpg",
     "discount": 15
-  },
-  {
-    "id": 4,
-    "name": "SPYMINNPOO Bisiklet LCD Ekran",
-    "price": 465,
-    "image": "https://m.media-amazon.com/images/I/61kOnYg2yEL._AC_UL400_.jpg",
-    "discount": 50
   }
 ]

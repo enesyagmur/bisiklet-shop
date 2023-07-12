@@ -13,6 +13,7 @@ import sliders from "../data/sliders.json";
 import BestSellersComponent from "../components/BestSellersComponent";
 import CarouselComponent from "../components/CarouselComponent";
 import DiscountedProductsComponent from "../components/DiscountedProductsComponent";
+import ImageCategory from "../components/ImageCategory";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -60,12 +61,11 @@ const Home = () => {
             <div className="sliderRightBottom"></div>
           </div>
         </div>
-        <div className="bestSellerProducts">
-          <BestSellersComponent />
-        </div>
-        <div className="discountedProducts">
-          <DiscountedProductsComponent />
-        </div>
+
+        <BestSellersComponent />
+
+        <DiscountedProductsComponent />
+        <ImageCategory />
       </div>
       <Footer />
     </div>
