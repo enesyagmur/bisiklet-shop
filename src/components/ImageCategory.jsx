@@ -5,15 +5,15 @@ const ImageCategory = () => {
   return (
     <div className="imageCategory">
       <div>
-        <p>Kasklar</p>
+        <p>KASKLAR</p>
       </div>
       <div>
         {" "}
-        <p>Kasklar</p>
+        <p>KASKLAR</p>
       </div>
       <div>
         {" "}
-        <p>Kasklar</p>
+        <p>KASKLAR</p>
       </div>
     </div>
   );

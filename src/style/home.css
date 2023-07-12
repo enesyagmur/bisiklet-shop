@@ -43,8 +43,18 @@
   width: 80%;
   height: 30%;
   border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--bodyBg);
   background-size: cover;
   background-image: url("https://images.bike24.com/media/1440/i/mb/76/c1/48/header-1-2880x920-gravel-bike-23-03-bike24-1470774.jpg");
+}
+.homeSliderRight p {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 5px;
 }
 
 /* ------------------------ */

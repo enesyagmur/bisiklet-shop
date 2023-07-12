@@ -56,9 +56,15 @@ const Home = () => {
           </div>
 
           <div className="homeSliderRight">
-            <div className="sliderRightTop"></div>
-            <div className="sliderRightCenter"></div>
-            <div className="sliderRightBottom"></div>
+            <div className="sliderRightTop">
+              <p>RUNNING</p>
+            </div>
+            <div className="sliderRightCenter">
+              <p>OUTDOOR</p>
+            </div>
+            <div className="sliderRightBottom">
+              <p>SWIMING</p>
+            </div>
           </div>
         </div>
 
