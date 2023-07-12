@@ -11,37 +11,15 @@ import { closeAllWindows } from "../redux/slice";
 import { useDispatch } from "react-redux";
 import sliders from "../data/sliders.json";
 import BestSellersComponent from "../components/BestSellersComponent";
-import CarouselComponent from "../components/CarouselComponent";
 import DiscountedProductsComponent from "../components/DiscountedProductsComponent";
 import ImageCategory from "../components/ImageCategory";
+import Slider from "../components/Slider";
 
 const Home = () => {
   const dispatch = useDispatch();
   const closeWindows = () => {
     dispatch(closeAllWindows());
   };
-  const [sliderCount, setSliderCount] = useState(0);
-  const [slider, setSlider] = useState(sliders[sliderCount]);
-
-  const changeSlider = (side) => {
-    if (side === "right") {
-      if (sliderCount < 2) {
-        setSliderCount(sliderCount + 1);
-      } else {
-        setSliderCount(sliderCount - 2);
-      }
-    } else if (side === "left") {
-      if (sliderCount > 0) {
-        setSliderCount(sliderCount - 1);
-      } else {
-        setSliderCount(sliderCount + 2);
-      }
-    }
-  };
-
-  useEffect(() => {
-    setSlider(sliders[sliderCount]);
-  }, [sliderCount]);
 
   return (
     <div className="home">
@@ -51,9 +29,7 @@ const Home = () => {
       <Category />
       <div className="homeMain" onClick={closeWindows}>
         <div className="homeSlider">
-          <div className="homeSliderLeft">
-            <CarouselComponent />
-          </div>
+          <Slider />
 
           <div className="homeSliderRight">
             <div className="sliderRightTop">
