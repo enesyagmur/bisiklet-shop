@@ -15,16 +15,21 @@ const Login = () => {
       id="login"
       className={componentState[0] ? "profileOpen" : "profileClose"}
     >
-      <p className="loginTitle">Login</p>
-      <div className="loginInput">
-        <p>Hesabınıza giriş yapın</p>
-        <input type="text" placeholder="mail adresi giriniz" />
-        <input type="pasword" placeholder="şifre" />
-        <button>Giriş</button>
+      <div className="loginTitle">
+        <p>GİRİŞ</p>
       </div>
-      <div className="register" onClick={goRegister}>
-        <p>Hesabınız yok mu?</p>
-        <button>Hızlı kayıt</button>
+      <div className="loginMain">
+        <div className="loginInput">
+          <p>Hesabınıza Giriş Yapın</p>
+          <input type="text" placeholder="Email" />
+          <input type="password" placeholder="Şifre" />
+          <button>Giriş</button>
+        </div>
+
+        <div className="loginRegister">
+          <p> Hesabınız Yok Mu? </p>
+          <button>Hızlı Kayıt</button>
+        </div>
       </div>
     </div>
   );

@@ -26,11 +26,11 @@ const Home = () => {
       <Header />
       <Login />
       <Sepet />
-      <Category />
+
       <div className="homeMain" onClick={closeWindows}>
         <div className="homeSlider">
           <Slider />
-
+          <Category />
           <div className="homeSliderRight">
             <div className="sliderRightTop">
               <p>RUNNING</p>
