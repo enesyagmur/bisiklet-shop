@@ -28,7 +28,7 @@ const Login = () => {
 
         <div className="loginRegister">
           <p> Hesabınız Yok Mu? </p>
-          <button>Hızlı Kayıt</button>
+          <button onClick={goRegister}>Hızlı Kayıt</button>
         </div>
       </div>
     </div>

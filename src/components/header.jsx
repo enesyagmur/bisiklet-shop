@@ -71,10 +71,10 @@ const Header = () => {
             <p>AKSESUARLAR</p>
           </div>
         </div>
-        <div className="header-search">
-          <input type="text" placeholder="ürün ara" />
-          <BsSearch className="icon" />
-        </div>
+
+        <input type="text" placeholder="Arama" className="serachBar" />
+        <BsSearch className="icon" id="searchIcon" />
+
         <div className="header-account">
           <MdOutlineAccountCircle className="icon" onClick={profileShow} />
           <AiOutlineHeart className="icon" />

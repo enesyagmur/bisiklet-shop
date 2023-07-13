@@ -9,7 +9,17 @@
   background-color: var(--bodyBg);
   display: flex;
   flex-direction: column;
+  opacity: 1;
 }
+.invisibleHome {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bodyBg);
+  display: flex;
+  flex-direction: column;
+  opacity: 0.5;
+}
+
 .homeMain {
   width: 100%;
   min-height: 2029px;

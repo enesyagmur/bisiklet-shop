@@ -8,7 +8,7 @@ import Sepet from "../components/Sepet";
 import Category from "../components/Category";
 import Footer from "../components/Footer";
 import { closeAllWindows } from "../redux/slice";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import sliders from "../data/sliders.json";
 import BestSellersComponent from "../components/BestSellersComponent";
 import DiscountedProductsComponent from "../components/DiscountedProductsComponent";

@@ -53,30 +53,24 @@
   letter-spacing: 2px;
 }
 
-.header-search {
+.serachBar {
   width: 15%;
   height: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 7px;
   border-radius: 20px;
   border: 2px solid var(--fontColor);
-}
-.header-search input {
-  width: 90%;
-  border-radius: 20px;
-
-  padding: 10px;
-  border: none;
   text-align: center;
+  font-size: 2rem;
 }
-.header-search > .icon {
-  background-color: var(--yanRenk);
-
+#searchIcon {
   padding: 7px;
   border-radius: 50%;
+  width: 40px;
+  height: 40px;
   color: white;
+  position: absolute;
+  background-color: var(--yanRenk);
+  left: 1442px;
 }
 
 .header-account {
