@@ -6,7 +6,7 @@ const Sepet = () => {
   const { componentState } = useSelector((state) => state.components);
   return (
     <div id="sepet" className={componentState[1] ? "sepetOpen" : "sepetClose"}>
-      <p className="sepetTitle">Sepet</p>
+      <p className="sepetTitle">SEPET</p>
       <div className="sepetList">
         <div className="sepetCount">
           <p>Sepetiniz</p> <p>0</p>

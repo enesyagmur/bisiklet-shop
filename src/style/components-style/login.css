@@ -68,6 +68,9 @@
   height: 50px;
   background-color: var(--yanRenk);
   border: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--bodyBg);
 }
 /* ----------------------- */
 
@@ -88,4 +91,6 @@
   height: 50px;
   background-color: var(--gray);
   border: none;
+  font-size: 1.5rem;
+  font-weight: 400;
 }

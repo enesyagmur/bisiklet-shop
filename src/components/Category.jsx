@@ -6,7 +6,7 @@ const Category = () => {
   const { componentState } = useSelector((state) => state.components);
   return (
     <div id="category" className={componentState[2] ? "open" : "close"}>
-      <p className="categoryTitle">Tüm kategoriler</p>
+      <p className="categoryTitle">KATEGORİLER</p>
       <div className="categoryList">
         <p>Koruyucu ekipmanlar</p>
         <p>Çantalar</p>
