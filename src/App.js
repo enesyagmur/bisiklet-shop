@@ -22,6 +22,5 @@ function App() {
 
 export default App;
 //home sayfası için yapılacaklar:
-//footer da ufak style işlemleri
-//slider daki hata yı düzeltme
-//pencerelerin resimlerin altında açılma sorunu
+//header daki inputu divden çıkartıp yanındakı logoyu absolute ile üstüne alma
+//register sayfasında header gözükmiyor
