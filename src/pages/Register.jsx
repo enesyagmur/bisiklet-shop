@@ -21,10 +21,6 @@ const Register = () => {
 
   return (
     <div className="register">
-      <Header />
-      <Login />
-      <Sepet />
-      <Category />
       <div className="registerInput" onClick={closeWindows}>
         <div className="registerInputHeader">
           <p className="registerInputTitle">Hesap oluşturma</p>

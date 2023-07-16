@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Detail from "./pages/Detail";
 import Basket from "./pages/Basket";
 import Register from "./pages/Register";
+import Products from "./pages/Products";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/detail" element={<Detail />} />
           <Route path="/basket" element={<Basket />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/products" element={<Products />} />
         </Routes>
       </BrowserRouter>
     </div>
@@ -21,6 +23,9 @@ function App() {
 }
 
 export default App;
-//home sayfası için yapılacaklar:
-//header daki inputu divden çıkartıp yanındakı logoyu absolute ile üstüne alma
-//register sayfasında header gözükmiyor
+
+//ürünler sayfası için yapılacaklar:
+// ürünlerin üzerindeki kategori ismi ve sıralama tipi seçmeye yarayan select yapılacak
+// filitre kısmı yapılacak
+//ürünlerin altına bi kaç tane yatay görsel
+// aşağı kaydırınca çıkan başa dön butonu tüm sayfalar için yapılacak

@@ -38,6 +38,10 @@ const Header = () => {
     navigate("/");
   };
 
+  const goProducts = () => {
+    navigate("/products");
+  };
+
   return (
     <div className="header">
       <div className="headerTop"></div>
@@ -51,29 +55,32 @@ const Header = () => {
             <p>HEPSİ</p>
           </div>
           <div>
-            <BsBicycle className="icon" />
+            <BsBicycle className="icon" onClick={goProducts} />
             <p>PARÇALAR</p>
           </div>
           <div>
-            <GiGloves className="icon" />
+            <GiGloves className="icon" onClick={goProducts} />
             <p>GİYİM</p>
           </div>
           <div>
-            <TbHelmet className="icon" />
+            <TbHelmet className="icon" onClick={goProducts} />
             <p>KORUMA</p>
           </div>
           <div>
-            <GiAutoRepair className="icon" />
+            <GiAutoRepair className="icon" onClick={goProducts} />
             <p>TAMİR</p>
           </div>
           <div>
-            <PiBatteryChargingVerticalLight className="icon" />
+            <PiBatteryChargingVerticalLight
+              className="icon"
+              onClick={goProducts}
+            />
             <p>AKSESUARLAR</p>
           </div>
         </div>
 
         <input type="text" placeholder="Arama" className="serachBar" />
-        <BsSearch className="icon" id="searchIcon" />
+        <BsSearch className="icon" id="searchIcon" onClick={goProducts} />
 
         <div className="header-account">
           <MdOutlineAccountCircle className="icon" onClick={profileShow} />
