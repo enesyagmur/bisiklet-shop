@@ -9,6 +9,7 @@ import { useDispatch } from "react-redux";
 import Footer from "../components/Footer";
 import products from "../data/products.json";
 import SortProducts from "../components/sortProducts";
+import FilterProducts from "../components/filterProducts";
 
 const Products = () => {
   const dispatch = useDispatch();
@@ -23,7 +24,7 @@ const Products = () => {
       <Category />
       <SortProducts />
       <div className="productsMain" onClick={closeWindows}>
-        <div className="productsFilter"></div>
+        <FilterProducts />
         <div className="productList">
           {products.map((item) => (
             <div className="product" key={item.id}>

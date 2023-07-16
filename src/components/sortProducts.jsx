@@ -5,7 +5,7 @@ const SortProducts = () => {
   return (
     <div className="sortProducts">
       <div className="filterTitle">
-        <p>Filter</p>
+        <p>Filtre</p>
       </div>
       <div className="sort">
         <p>Ürünler</p>
