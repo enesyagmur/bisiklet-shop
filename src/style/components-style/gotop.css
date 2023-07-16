@@ -1,0 +1,14 @@
+.goTop {
+  position: absolute;
+  top: 500px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: var(--gray);
+}
+.goTop .top {
+  color: var(--fontColor);
+}

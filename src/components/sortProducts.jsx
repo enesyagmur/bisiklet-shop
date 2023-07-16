@@ -1,9 +1,15 @@
 import React from "react";
 import "../style/products.css";
+import { useDispatch } from "react-redux";
+import { closeAllWindows } from "../redux/slice";
 
 const SortProducts = () => {
+  const dispatch = useDispatch();
+  const closeWindows = () => {
+    dispatch(closeAllWindows());
+  };
   return (
-    <div className="sortProducts">
+    <div className="sortProducts" onClick={closeWindows}>
       <div className="filterTitle">
         <p>Filtre</p>
       </div>

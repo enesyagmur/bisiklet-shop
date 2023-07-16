@@ -28,5 +28,4 @@ export default App;
 //ürünler sayfası için yapılacaklar:
 // ürünlerin üzerindeki kategori ismi ve sıralama tipi seçmeye yarayan select yapılacak
 // filitre kısmı yapılacak
-//ürünlerin altına bi kaç tane yatay görsel
 // aşağı kaydırınca çıkan başa dön butonu tüm sayfalar için yapılacak

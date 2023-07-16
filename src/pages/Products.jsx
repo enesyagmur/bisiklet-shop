@@ -24,8 +24,8 @@ const Products = () => {
       <Category />
       <SortProducts />
       <div className="productsMain" onClick={closeWindows}>
-        <FilterProducts />
-        <div className="productList">
+        <FilterProducts onClick={closeWindows} />
+        <div className="productList" onClick={closeWindows}>
           {products.map((item) => (
             <div className="product" key={item.id}>
               <p className="productName">{item.name}</p>
