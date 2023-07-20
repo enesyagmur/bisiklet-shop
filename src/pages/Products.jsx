@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 import products from "../data/products.json";
 import SortProducts from "../components/sortProducts";
 import FilterProducts from "../components/filterProducts";
+import GoTop from "../components/goTop";
 
 const Products = () => {
   const dispatch = useDispatch();
@@ -23,6 +24,8 @@ const Products = () => {
       <Sepet />
       <Category />
       <SortProducts />
+      <GoTop />
+
       <div className="productsMain" onClick={closeWindows}>
         <FilterProducts onClick={closeWindows} />
         <div className="productList" onClick={closeWindows}>

@@ -7,6 +7,7 @@ import Category from "../components/Category";
 import { closeAllWindows } from "../redux/slice";
 import { useDispatch } from "react-redux";
 import Footer from "../components/Footer";
+import GoTop from "../components/goTop";
 
 const Register = () => {
   const dispatch = useDispatch();
@@ -21,6 +22,8 @@ const Register = () => {
 
   return (
     <div className="register">
+      <Header />
+      <GoTop />
       <div className="registerInput" onClick={closeWindows}>
         <div className="registerInputHeader">
           <p className="registerInputTitle">Hesap oluşturma</p>

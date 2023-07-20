@@ -14,6 +14,7 @@ import BestSellersComponent from "../components/BestSellersComponent";
 import DiscountedProductsComponent from "../components/DiscountedProductsComponent";
 import ImageCategory from "../components/ImageCategory";
 import Slider from "../components/Slider";
+import GoTop from "../components/goTop";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -28,6 +29,7 @@ const Home = () => {
       <Sepet />
 
       <div className="homeMain" onClick={closeWindows}>
+        <GoTop />
         <div className="homeSlider">
           <Slider />
           <Category />
